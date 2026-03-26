@@ -5,21 +5,21 @@
 
 /* CSS Variables / Design Tokens */
 :root {
-    /* Colors - Matching Logo (Blue/Silver/Orange) */
-    --color-primary: #1E6BB8;
-    --color-primary-dark: #155085;
-    --color-primary-light: #3D8AD9;
-    --color-accent: #E67E22;
-    --color-accent-light: #F39C12;
+    /* Colors - Matching Gold Logo Theme */
+    --color-primary: #C9A227;
+    --color-primary-dark: #A6850F;
+    --color-primary-light: #E4B82C;
+    --color-accent: #D4A84B;
+    --color-accent-light: #F0C75E;
     --color-background: #FAFBFC;
-    --color-background-dark: #0D1B2A;
-    --color-background-alt: #F0F4F8;
-    --color-foreground: #1B2838;
+    --color-background-dark: #1A1A1A;
+    --color-background-alt: #F5F3EF;
+    --color-foreground: #1B1B1B;
     --color-foreground-light: #FFFFFF;
-    --color-muted: #6B7C93;
-    --color-border: #D1D9E6;
-    --color-silver: #A8B5C4;
-    --color-metallic: #78909C;
+    --color-muted: #6B6B6B;
+    --color-border: #D4CFC5;
+    --color-gold: #C9A227;
+    --color-gold-light: #E4C869;
     
     /* Typography */
     --font-heading: 'Playfair Display', Georgia, serif;
@@ -337,7 +337,7 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ALU1-AnsBBNObkCV6DiTzogXY0hbhy11DWP.jpeg');
+    background-image: url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/background-lj7S0UCYxbV5GaIDLhcEOVVEwWIkbP.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1034,10 +1034,18 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .footer-contact p {
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.9375rem;
-    margin-bottom: var(--space-xs);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9375rem;
+  margin-bottom: var(--space-xs);
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
 }
+
+.footer-contact p i {
+  color: var(--color-primary);
+  width: 18px;
+  }
 
 .social-links {
     display: flex;
@@ -1046,21 +1054,22 @@ h3 { font-size: clamp(1.25rem, 2vw, 1.5rem); }
 }
 
 .social-links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--color-foreground-light);
-    font-weight: 600;
-    border-radius: var(--radius-sm);
-    transition: var(--transition-base);
-}
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--color-foreground-light);
+  font-size: 1.1rem;
+  border-radius: var(--radius-sm);
+  transition: var(--transition-base);
+  }
+  
 .social-links a:hover {
-    background-color: var(--color-primary);
-}
+  background-color: var(--color-primary);
+  color: var(--color-background-dark);
+  }
 
 .footer-bottom {
     padding-top: var(--space-lg);
